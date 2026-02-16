@@ -4,58 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delícias Caseiras | A Melhor Receita</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>A melhor receita você encontrará aqui</h1>
-            <p>Descubra o segredo do bolo perfeito e transforme sua cozinha.</p>
-            <a href="#receita" class="btn">Ver Receita</a>
-        </div>
-    </header>
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
 
-    <main id="receita" class="container">
-        <section class="recipe-card">
-            <h2>Bolo de Chocolate Especial com Calda de Brilho</h2>
-            <p class="description">Um bolo fofinho, úmido e com aquele sabor de infância que todo mundo ama.</p>
-            
-            <div class="recipe-details">
-                <div class="ingredients">
-                    <h3>Ingredientes</h3>
-                    <ul>
-                        <li>3 ovos grandes</li>
-                        <li>1 xícara de óleo</li>
-                        <li>1 xícara de açúcar</li>
-                        <li>1 xícara de chocolate em pó (50% cacau)</li>
-                        <li>2 xícaras de farinha de trigo</li>
-                        <li>1 xícara de água fervendo</li>
-                        <li>1 colher de sopa de fermento em pó</li>
-                    </ul>
-                </div>
+        /* Capa (Hero) com a imagem do bolo */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1578985543064-739345c66562?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
 
-                <div class="instructions">
-                    <h3>Modo de Preparo</h3>
-                    <ol>
-                        <li>Bata os ovos, o óleo e o açúcar no liquidificador por 3 minutos.</li>
-                        <li>Em uma tigela, misture a farinha e o chocolate em pó.</li>
-                        <li>Despeje a mistura do liquidificador na tigela e mexa bem.</li>
-                        <li>Adicione a água fervendo com cuidado e misture até ficar homogêneo.</li>
-                        <li>Por fim, adicione o fermento e leve ao forno médio (180°C) por 40 minutos.</li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-    </main>
+        .hero-content h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            font-weight: 800;
+        }
 
-    <footer>
-        <p>&copy; 2024 Meu Site de Receitas - Feito com ❤️ para o GitHub</p>
-    </footer>
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
 
-</body>
-</html>
-    </nav>
-</header>
+        .btn {
+            display: inline-block;
+            background-color: #ff4757;
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s, background 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+        }
 
-<section id="inicio"
+        .btn:hover {
+            background-color: #ff6b81;
+            transform: translateY(-3px);
+        }
+
+        /* Seção da Receita */
+        .container {
+            max-width: 900px;
+            margin: -60px auto 60px auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .recipe-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2f3542;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        .description {
+            font-style: italic;
+            color: #747d8c;
+            margin-bottom: 35px;
+            border-left: 4px solid #ff4757;
+            padding-left: 15px;
+        }
+
+        .recipe-details {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 40px;
+        }
+
+        /* Responsividade para Celular */
+        @media (max-width: 768px) {
+            .recipe-details { grid-template-columns: 1fr; }
+            .hero { height: 70vh; }
+        }
+
+        h3 {
+            color: #ff4757;
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 1px;
