@@ -3,34 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advocacia Previdenciária Profissional</title>
-    <style>
-        :root {
-            --primary: #1a2a40; 
-            --gold: #c5a059;    
-            --light: #f8f9fa;
-            --dark: #333;
-        }
-        body { font-family: 'Georgia', serif; margin: 0; color: var(--dark); line-height: 1.6; background-color: var(--light); }
-        header { background: var(--primary); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
-        .logo { color: var(--gold); font-size: 1.5rem; font-weight: bold; text-transform: uppercase; }
-        nav a { color: white; text-decoration: none; margin-left: 20px; font-size: 0.9rem; font-family: 'Arial', sans-serif; }
-        .hero { background: linear-gradient(rgba(26, 42, 64, 0.8), rgba(26, 42, 64, 0.8)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1000') center/cover;
-                height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 20px; }
-        .section { padding: 60px 10%; text-align: center; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
-        .card { background: white; padding: 30px; border-top: 4px solid var(--gold); box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .btn-whatsapp { background: #25d366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 20px; }
-        footer { background: var(--primary); color: white; padding: 40px 10%; text-align: center; font-size: 0.8rem; }
-    </style>
+    <title>Delícias Caseiras | A Melhor Receita</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <div class="logo">Advocacia Prev</div>
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#servicos">Especialidades</a>
-        <a href="#contato">Contato</a>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>A melhor receita você encontrará aqui</h1>
+            <p>Descubra o segredo do bolo perfeito e transforme sua cozinha.</p>
+            <a href="#receita" class="btn">Ver Receita</a>
+        </div>
+    </header>
+
+    <main id="receita" class="container">
+        <section class="recipe-card">
+            <h2>Bolo de Chocolate Especial com Calda de Brilho</h2>
+            <p class="description">Um bolo fofinho, úmido e com aquele sabor de infância que todo mundo ama.</p>
+            
+            <div class="recipe-details">
+                <div class="ingredients">
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>3 ovos grandes</li>
+                        <li>1 xícara de óleo</li>
+                        <li>1 xícara de açúcar</li>
+                        <li>1 xícara de chocolate em pó (50% cacau)</li>
+                        <li>2 xícaras de farinha de trigo</li>
+                        <li>1 xícara de água fervendo</li>
+                        <li>1 colher de sopa de fermento em pó</li>
+                    </ul>
+                </div>
+
+                <div class="instructions">
+                    <h3>Modo de Preparo</h3>
+                    <ol>
+                        <li>Bata os ovos, o óleo e o açúcar no liquidificador por 3 minutos.</li>
+                        <li>Em uma tigela, misture a farinha e o chocolate em pó.</li>
+                        <li>Despeje a mistura do liquidificador na tigela e mexa bem.</li>
+                        <li>Adicione a água fervendo com cuidado e misture até ficar homogêneo.</li>
+                        <li>Por fim, adicione o fermento e leve ao forno médio (180°C) por 40 minutos.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Site de Receitas - Feito com ❤️ para o GitHub</p>
+    </footer>
+
+</body>
+</html>
     </nav>
 </header>
+
 <section id="inicio"
